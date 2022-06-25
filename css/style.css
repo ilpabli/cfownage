@@ -78,18 +78,42 @@ h1 {
     grid-area: footer;
     background-color: #1a1a1a;
     color: #fff;
-    height: 3rem;
-    padding: 1rem;
+    height: auto;
 }
 
 .footer__redes {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
 }
 
 .redes__icons {
-    margin-right: 1rem;
+    padding: 20px;
+    animation: icon3d 200ms 10;
+    color: #fff;
+}
+
+.redes__icons:hover {
+    animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+    0% {
+      text-shadow: 5px 4px rgba(244,67,54,1), -5px -6px rgba(33,150,243,1);
+    }
+    25% {
+      text-shadow: -5px -6px rgba(244,67,54,1), 5px 4px rgba(33,150,243,1);
+    }
+    50% {
+      text-shadow: 5px -4px rgba(244,67,54,1), -8px 4px rgba(33,150,243,1);
+    }
+    75% {
+      text-shadow: -8px -4px rgba(244,67,54,1), -5px -4px rgba(33,150,243,1);
+    }
+    100% {
+      text-shadow: -5px 0 rgba(244,67,54,1), 5px -4px rgba(33,150,243,1);
+    }
 }
 
 /* index.html */
@@ -369,7 +393,12 @@ h1 {
     .nutricion__content {
         grid-template-columns: repeat(1, 1fr);
     }
+}
 
+@media (max-width: 1024px) {
+    .index__video {
+        max-width: 1024px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -407,6 +436,10 @@ h1 {
     .index__text--boton {
         width: 150px;
         font-size: 15px;
+    }
+
+    .redes__icons {
+        padding: 10px;
     }
 
     .wod__container {
@@ -467,6 +500,10 @@ h1 {
 
     .footer__redes h5 {
         font-size: 10px;
+    }
+
+    .redes__icons {
+        padding: 6px;
     }
 
     .container__ejercicio img, iframe {
@@ -580,13 +617,8 @@ h1 {
         font-size: 8px;
     }
 
-    .footer__redes img {
-        width: 12px;
-        height: 12px;
-    }
-
     .redes__icons {
-        margin-right: 0.5rem;
+        padding: 5px;
     }
 
     .info__content iframe {
