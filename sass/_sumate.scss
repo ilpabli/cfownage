@@ -1,0 +1,61 @@
+.sumate {
+    width: auto;
+    max-width: auto;
+    height: auto;
+    background-image: url(../images/snatch.jpg);
+    background-size: cover;
+    padding: 10rem 5rem;
+    display: flex;
+    justify-content: center;
+    &__box {
+        max-width: 700px;
+        width: 100%;
+        color: #1a1a1a;
+        font-weight: bold;
+        font-size: medium;
+        text-align: center;
+        background-color: $bgcolor;
+        opacity: 0.8;
+        border: 2px solid $purple; 
+        border-radius: 2rem;
+        &--title {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 1rem;
+        }
+        &--form {
+            width: 50%;
+            background: $boxcolor;
+            padding: 5px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: 1px solid $purple;
+            font-size: 18px;
+        }
+        &--contanos {
+            width: 70%;
+            height: 200px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid $purple;
+            border-radius: 10px;
+            background-color: $boxcolor;
+            font-size: 16px;
+            resize: none;
+        }
+        &--boton {
+            width: 20%;
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 1rem;
+            &:hover {
+                background-color: $green;
+                box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
+            }
+        }
+    }
+}

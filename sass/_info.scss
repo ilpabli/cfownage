@@ -1,0 +1,15 @@
+.info__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin: 1rem 0rem;
+    &--text {
+        margin: 1rem;
+        padding: 1rem;
+        border: 2px solid $purple;
+        border-radius: 20px;
+        align-content: center;
+        background-color: $boxcolor;
+    }
+}
