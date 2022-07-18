@@ -8,13 +8,16 @@
       justify-content: space-between;
       align-items: center;
       padding: 0 10px;
-      div i {
-        padding: 20px;
-        animation: icon3d 200ms 10;
-        color: $white;
-        &:hover {
-          animation: icon3d 200ms infinite;
-        }
+    }
+}
+
+@each $red, $redcolor in $redes {
+  .footer__redes--#{$red} {
+    padding: 20px;
+    animation: icon3d 200ms 10;
+    color: $redcolor;
+      &:hover {
+        animation: icon3d 200ms infinite; 
       }
     }
 }

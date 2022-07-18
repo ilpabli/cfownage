@@ -6,3 +6,27 @@ $purple: #9600ff;
 $green: #00ff00;
 $white: #fff;
 $black: #000;
+
+// Mixin
+@mixin tarjetacolor ($bgcolor: $white, $fontcolor: $ftcolor) {
+    background-color: $bgcolor;
+    color: $fontcolor;
+}
+
+@mixin bgimage ($imageloc) {
+    width: auto;
+    max-width: auto;
+    height: auto;
+    background-image: $imageloc;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Mapa footer
+
+$redes: (
+    facebook: $white,
+    twitter: $green,
+    instagram: $green,
+    youtube: $white,
+);

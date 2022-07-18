@@ -1,10 +1,5 @@
 .contacto {
-    width: auto;
-    max-width: auto;
-    height: auto;
-    background-image: url(../images/mybox.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include bgimage (url(../images/mybox.jpg));
     padding: 10rem 5rem;
     display: flex;
     justify-content: center;

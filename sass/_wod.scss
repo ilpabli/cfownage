@@ -51,10 +51,9 @@
     justify-items: center;
     gap: 10px;
     &--ejercicio {
+        @include tarjetacolor;
         width: 660px;
         transition: box-shadow 0.3s ease;
-        background-color: $white;
-        color: $ftcolor;
         font-size: large;
         font-weight: bold;
         text-align: center;
@@ -63,5 +62,9 @@
         &:hover {
             box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.4);
         }
+    }
+    &--ejercicio-viernes {
+        @extend .wod__container--ejercicio;
+        @include tarjetacolor ($purple, $white);
     }
 }

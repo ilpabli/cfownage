@@ -1,9 +1,5 @@
 .sumate {
-    width: auto;
-    max-width: auto;
-    height: auto;
-    background-image: url(../images/snatch.jpg);
-    background-size: cover;
+    @include bgimage (url(../images/snatch.jpg));
     padding: 10rem 5rem;
     display: flex;
     justify-content: center;
